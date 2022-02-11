@@ -156,32 +156,6 @@ If an answer is required within a file, all your answers files must have a newli
 
 </div>
 
-<div data-role="task1177" data-position="1" id="task-num-0">
-      <div class="panel panel-default task-card " id="task-1177">
-  <span id="user_id" data-id="3779"></span>
-
-  <div class="panel-heading panel-heading-actions">
-    <h3 class="panel-title">
-      0. Bubble sort
-    </h3>
-
-    <div>
-        <span class="label label-info">
-          mandatory
-        </span>
-    </div>
-  </div>
-
-  <div class="panel-body">
-    <span id="user_id" data-id="3779"></span>
-
-    <!-- Progress vs Score -->
-
-    <!-- Task Body -->
-    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/lyZQPjUT5B4" frameborder="0" allowfullscreen=""></iframe><br>
-<br></p>
-
-<p>Write a function that sorts an array of integers in ascending order using the <a href="/rltoken/fCItpIfgmE07fFbHBUToeg" title="Bubble sort" target="_blank">Bubble sort</a> algorithm</p>
 
 <h2 class="gap">Tasks</h2>
 
@@ -190,8 +164,8 @@ If an answer is required within a file, all your answers files must have a newli
       0. Bubble sort
     </h3>
 
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/lyZQPjUT5B4" frameborder="0" allowfullscreen=""></iframe><br>
-<br></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lyZQPjUT5B4" frameborder="0" allowfullscreen=""></iframe>
+
 
 <ul>
 <li>Prototype: <code>void bubble_sort(int *array, size_t size);</code></li>
@@ -206,7 +180,7 @@ If an answer is required within a file, all your answers files must have a newli
 <li>in the worst case</li>
 </ul>
 
-<pre><code>alex@/tmp/sort$ cat 0-main.c 
+<pre><code>alex@/tmp/sort$ cat 0-main.c
 #include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 #include "sort.h"
@@ -255,7 +229,7 @@ alex@/tmp/sort$ ./bubble
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
-alex@/tmp/sort$ 
+alex@/tmp/sort$
 </code></pre>
 
   </div>
