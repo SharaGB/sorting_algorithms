@@ -17,7 +17,7 @@ void swap(int *array, size_t i, size_t j)
 }
 
 /**
- * partition - Function
+ * partition - Function that orders elements (Lomuto).
  * @array: The array to sort.
  * @low: Is starting index.
  * @high: The last index of array.
