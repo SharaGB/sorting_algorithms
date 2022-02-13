@@ -12,13 +12,9 @@ void bubble_sort(int *array, size_t size)
 	size_t i = 0, j = 0;
 	int swap = 0; /* Variable para indicar intercambios */
 
-	if (array == NULL)
-	{
-		return;
-	}
 	for (i = 0; i < size - 1; i++)
 	{
-		for (j = 0; j < size - i - 1; j++)
+		for (j = 0; j < size - 1 - i; j++)
 		{
 			if (array[j] > array[j + 1]) /* Comparar elementos, orden ascendente(>) */
 			{
