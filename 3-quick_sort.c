@@ -37,7 +37,7 @@ int partition(int *array, int low, int high, size_t size)
 	for (j = low; j <= high - 1; j++)
 	{
 		/* Si el elemento actual es menor que pivot, intercambian elementos */
-		if (array[j] < pivot)
+		if (array[j] <= pivot)
 		{
 			i++; /* Incremento el índice del elemento más pequeño */
 			if (i != j)
