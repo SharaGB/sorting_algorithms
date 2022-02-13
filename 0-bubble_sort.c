@@ -13,7 +13,6 @@ void bubble_sort(int *array, size_t size)
 	/* Variable temporal para mantener */
 	/* los valores mientras se intercambia */
 	int tmp = 0;
-	unsigned int swap = 0; /* Variable para indicar intercambios */
 
 	if (array == NULL)
 	{
@@ -29,13 +28,8 @@ void bubble_sort(int *array, size_t size)
 				tmp = array[j];
 				array[j] = array[j + 1];
 				array[j + 1] = tmp;
-				swap = 1; /* Establecerlo a 1 para indicar que se ha hecho intercambios */
 				print_array(array, size);
 			}
-		}
-		if (swap == 0) /* Si no hay intercambios se sale del bucle */
-		{
-			break;
 		}
 		i++;
 	}
