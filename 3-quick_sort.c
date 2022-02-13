@@ -7,7 +7,7 @@
  *
  * Return: Always 0.
  */
-void swap(int *array, size_t i, size_t j)
+void swap(int *array, int i, int j)
 {
 	int swap = 0;
 
@@ -27,8 +27,8 @@ void swap(int *array, size_t i, size_t j)
  */
 int partition(int *array, int low, int high, size_t size)
 {
-	int j = 0;
 	int i = 0;
+	int j = 0;
 	int pivot = 0;
 
 	i = (low - 1); /* Índice del elemento más pequeño */
