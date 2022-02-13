@@ -12,19 +12,25 @@ void bubble_sort(int *array, size_t size)
 	size_t i = 0, j = 0;
 	int swap = 0; /* Variable para indicar intercambios */
 
-	for (i = 0; i < size - 1; i++)
+	if (array == NULL)
 	{
-		for (j = 0; j < size - 1 - i; j++)
+		return;
+	}
+	if (size >= 2)
+	{
+		for (i = 0; i < size - 1; i++)
 		{
-			if (array[j] > array[j + 1]) /* Comparar elementos, orden ascendente(>) */
+			for (j = 0; j < size - 1 - i; j++)
 			{
-				/* Intercambio de elementos */
-				swap = array[j];
-				array[j] = array[j + 1];
-				array[j + 1] = swap;
-				print_array(array, size);
+				if (array[j] > array[j + 1]) /* Comparar elementos, orden ascendente(>) */
+				{
+					/* Intercambio de elementos */
+					swap = array[j];
+					array[j] = array[j + 1];
+					array[j + 1] = swap;
+					print_array(array, size);
+				}
 			}
 		}
-
 	}
 }
