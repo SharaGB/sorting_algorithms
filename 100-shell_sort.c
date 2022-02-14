@@ -14,7 +14,7 @@ void shell_sort(int *array, size_t size)
 	size_t interval = 1;
 	int tmp;
 
-	if (array == NULL || size < 2) /* Size obligatorio para comprobar */
+	if (array == NULL || size < 2) /* Size comprobación obligatoria */
 	{
 		return;
 	}
