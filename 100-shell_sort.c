@@ -22,7 +22,7 @@ void shell_sort(int *array, size_t size)
 	{
 		interval = interval * 3 + 1; /* Secuencia de intervalos(Knuth) */
 	}
-	while (interval > 0)
+	while (interval >= 1)
 	{
 		/* Realiza una clasificación de inserción de intervalos */
 		/* Sigue añadiendo elementos hasta que todo el array esté ordenado */
@@ -38,7 +38,7 @@ void shell_sort(int *array, size_t size)
 			}
 			array[j] = tmp; /* Poner en el lugar correcto al elemetno tmp */
 		}
-		interval = (interval - 1) / 3;
+		interval /= 3;
 		print_array(array, size);
 	}
 }
