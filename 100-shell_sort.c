@@ -20,7 +20,7 @@ void shell_sort(int *array, size_t size)
 	}
 	while (interval < size / 3)
 	{
-		interval += 1* 3 + 1; /* Secuencia de intervalos(Knuth) */
+		interval = interval * 3 + 1; /* Secuencia de intervalos(Knuth) */
 	}
 	while (interval > 0)
 	{
