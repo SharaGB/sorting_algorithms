@@ -8,6 +8,7 @@
  */
 void swap_cocktail(listint_t **list, listint_t *n)
 {
+	n->next->prev = n->prev;
 	if (n->prev != NULL)
 	{
 		n->prev->next = n->next;
@@ -16,7 +17,6 @@ void swap_cocktail(listint_t **list, listint_t *n)
 	{
 		*list = n->next;
 	}
-	n->next->prev = n->prev;
 	n->prev = n->next;
 	n->next = n->next->next;
 	n->prev->next = n;
