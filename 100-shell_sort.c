@@ -11,11 +11,10 @@ void shell_sort(int *array, size_t size)
 {
 	size_t i = 0;
 	size_t j = 0;
-	size_t interval;
+	size_t interval = 0;
 	int tmp;
 
-	interval = 1;
-	if (array == NULL || size < 2)
+	if (array == NULL)
 	{
 		return;
 	}
