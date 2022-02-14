@@ -38,10 +38,12 @@ void cocktail_sort_list(listint_t **list)
 	int swap = 1;
 	listint_t *tmp = *list;
 
-	while (swap == 0)
+	if (*list == NULL)
 	{
-		swap = 0;
+		return;
 	}
+	while (swap == 0)
+		swap = 0;
 	while (swap != 0)
 	{
 		while (tmp->prev != NULL)
