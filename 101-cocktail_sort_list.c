@@ -36,39 +36,41 @@ void swap_cocktail(listint_t **list, listint_t *n)
 void cocktail_sort_list(listint_t **list)
 {
 	int swap = 1;
-	listint_t *tmp = NULL;
+	listint_t *ptr = *list;
 
-	while (swap == 0)
-		swap = 0;
-	tmp = *list;
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
+	{
+		return;
+	}
 	while (swap != 0)
 	{
-		while (tmp->prev != NULL)
+		swap = 0;
+		while (ptr->next != NULL)
 		{
-			if (tmp->prev->n > tmp->n)
+			if (ptr->n > ptr->next->n)
 			{
-				swap_cocktail(list, tmp->prev);
 				swap = 1;
+				swap_cocktail(list, ptr);
 				print_list(*list);
 			}
 			else
-				tmp = tmp->prev;
+				ptr = ptr->next;
 		}
 		if (swap == 0)
 		{
 			break;
 		}
 		swap = 0;
-		while (tmp->next != NULL)
+		while (ptr->prev != NULL)
 		{
-			if (tmp->n > tmp->next->n)
+			if (ptr->prev->n > ptr->n)
 			{
-				swap_cocktail(list, tmp);
 				swap = 1;
+				swap_cocktail(list, ptr->prev);
 				print_list(*list);
 			}
 			else
-				tmp = tmp->next;
+				ptr = ptr->prev;
 		}
 	}
 }
