@@ -32,7 +32,7 @@ void shell_sort(int *array, size_t size)
 			tmp = array[i];
 			/* Desplzamos los elementos ordenados hasta que encuentre ña unibación */
 			/* correcta de array[i] */
-			for (j = i; j >= interval && array[j - interval] > tmp; j -= interval)
+			for (j = i; j >= interval && array[j - interval] > tmp; j = j - interval)
 			{
 				array[j] = array[j - interval];
 			}
