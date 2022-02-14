@@ -11,15 +11,18 @@ void shell_sort(int *array, size_t size)
 {
 	size_t i = 0;
 	size_t j = 0;
-	size_t interval = 1;
+	size_t interval;
 	int tmp;
 
-	if (array == NULL)
+	interval = 1;
+	if (array == NULL || size < 2)
+	{
 		return;
-
+	}
 	while (interval < size / 3)
+	{
 		interval = interval * 3 + 1; /* Secuencia de intervalos(Knuth) */
-
+	}
 	while (interval > 0)
 	{
 		/* Realiza una clasificación de inserción de intervalos */
@@ -30,7 +33,7 @@ void shell_sort(int *array, size_t size)
 			tmp = array[i];
 			/* Desplzamos los elementos ordenados hasta que encuentre ña unibación */
 			/* correcta de array[i] */
-			for (j = i; j >= interval && array[j - interval] > tmp; j = j - interval)
+			for (j = i; j >= interval && array[j - interval] > tmp; j -= interval)
 			{
 				array[j] = array[j - interval];
 			}
