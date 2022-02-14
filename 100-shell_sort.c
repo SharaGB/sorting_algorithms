@@ -26,7 +26,7 @@ void shell_sort(int *array, size_t size)
 	{
 		/* Realiza una clasificación de inserción de intervalos */
 		/* Sigue añadiendo elementos hasta que todo el array esté ordenado */
-		for (i = interval; i < size; i++)
+		for (i = interval; i < size; i += 1)
 		{
 			/* Añadir ar[i] a los elementos que han sido ordenados y guardalos en tmp*/
 			tmp = array[i];
