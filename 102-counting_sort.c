@@ -9,17 +9,15 @@
  */
 void counting_sort(int *array, size_t size)
 {
-	size_t i = 0, swap = 0, num = 0;
-	int j = 0, k_max = 0; /* Mayor número del array */
+	size_t i = 0;
+	int j = 0, swap = 0, num = 0, k_max = 0; /* Mayor número del array */
 	int *count = NULL, *ptr = NULL;
 
-	if (array == NULL)
-		return;
 	ptr = malloc(sizeof(int) * size);
-	if (ptr == NULL)
+	if (array == NULL || ptr == NULL)
 		return;
 
-	for (i = 0; i < size; i++)
+	for (i = 0, k_max = 0; i < size; i++)
 	{
 		ptr[i] = array[i];
 		if (array[i] > k_max) /* Encuentra el elemento más grande del array */
