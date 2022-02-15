@@ -13,10 +13,10 @@ void counting_sort(int *array, size_t size)
 	int j = 0, swap = 0, num = 0, k_max = 0; /* Mayor número del array */
 	int *count = NULL, *ptr = NULL;
 
-	if (array == NULL)
+	if (array == NULL || size < 2)
 		return;
 	ptr = malloc(sizeof(int) * size);
-	if (ptr == NULL || size < 2)
+	if (ptr == NULL)
 		return;
 
 	for (i = 0; i < size; i++)
