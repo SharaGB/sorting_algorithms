@@ -32,7 +32,7 @@ void counting_sort(int *array, size_t size)
 		return;
 
 	for (j = 0; j <= k_max; j++)
-		count[j] = 0; /* Inicializar array count */
+		count[i] = 0; /* Inicializar array count */
 	for (i = 0; i < size; i++)
 		count[array[i]]++; /* Almacenar count de cada elemento */
 	for (j = 0; j <= k_max; j++)
