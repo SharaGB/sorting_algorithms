@@ -9,8 +9,8 @@
  */
 void counting_sort(int *array, size_t size)
 {
-	size_t i = 0;
-	int j = 0, swap = 0, num = 0, k_max = 0; /* Mayor número del array */
+	size_t i = 0, swap = 0, num = 0;
+	int j = 0, k_max = 0; /* Mayor número del array */
 	int *count = NULL, *ptr = NULL;
 
 	if (array == NULL)
@@ -25,12 +25,12 @@ void counting_sort(int *array, size_t size)
 		if (array[i] > k_max) /* Encuentra el elemento más grande del array */
 			k_max = array[i];
 	}
-	count = malloc(sizeof(int) * (k_max + 1)); /* Tamaño de count = max + 1 */
+	count = malloc(sizeof(int) * (k_max + 1)); /* Hacemos malloc para count: */
+	/* El tamaño de count debe ser (max+1) pero no podemos declararlo como */
+	/* int count(max+1) ya que no soporta la asignación dinámica de memoria */
 	if (count == NULL)
-	{
-		free(ptr);
 		return;
-	}
+
 	for (j = 0; j <= k_max; j++)
 		count[j] = 0; /* Inicializar array count */
 	for (i = 0; i < size; i++)
