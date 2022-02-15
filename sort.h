@@ -27,6 +27,8 @@ void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
+void merge_sort(int *array, size_t size);
+void quick_sort_hoare(int *array, size_t size);
 
 /* For Quick sort algorithm */
 void swap(int *array, int i, int j);
@@ -35,5 +37,14 @@ void quickSort(int *array, int low, int high, size_t size);
 
 /* For Cocktail shaker sort algorithm */
 void swap_cocktail(listint_t **list, listint_t *n);
+
+/* For Merge sort algorithm */
+void merge(int *array, int start, int mid, int end);
+void mergeSort(int *array, int start, int end);
+
+/* For Quick sort Hoare */
+void swap_hoare(int *array, int i, int j);
+int partition_hoare(int *array, int low, int high, size_t size);
+void quickSort_hoare(int *array, int low, int high, size_t size);
 
 #endif /* _SORT_H_ */
