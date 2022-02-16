@@ -88,12 +88,11 @@ void merge(int low, int mid, int high, int *aux, int *array)
 void merge_sort(int *array, size_t size)
 {
 	size_t i = 0;
-	int *ptr = NULL;
+	int *ptr = malloc(sizeof(int) * size);
 
-	if (array == NULL)
-		return;
-	ptr = malloc(sizeof(int) * size);
 	if (ptr == NULL)
+		return;
+	if (array == NULL)
 		return;
 
 	for (i = 0; i < size; i++)
