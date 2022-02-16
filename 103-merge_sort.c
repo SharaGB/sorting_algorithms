@@ -54,17 +54,13 @@ void merge(int low, int mid, int high, int *aux, int *array)
 	/* Bucle de low a high para llenar cada elemento del array */
 	for (k = low; k < high; k++)
 	{
-		if (left == mid + 1) /* Array izquierdo ha llegado a la última posición */
-		{
-			aux[k] = array[left];
-			left++;
-		}
-		else if (right == high + 1) /* Array derecho llega a la última posición */
-		{
-			aux[k] = array[left];
-			left++;
-		}
-		else if (left < mid && (right >= high || array[left] <= array[right]))
+		/* if (left == mid + 1) Array izquierdo ha llegado a la última posición */
+			/* aux[k] = array[left]; */
+			/* left++; */
+		/* else if (right == high + 1) Array derecho llega a la última posición */
+			/* aux[k] = array[left]; */
+			/* left++; */
+		if (left < mid && (right >= high || array[left] <= array[right]))
 		{
 			aux[k] = array[left];
 			left++;
@@ -90,7 +86,7 @@ void merge_sort(int *array, size_t size)
 	size_t i = 0;
 	int *ptr = NULL;
 
-	if (array == NULL)
+	if (array == NULL || size < 2)
 		return;
 	ptr = malloc(sizeof(int) * size);
 	if (ptr == NULL)
