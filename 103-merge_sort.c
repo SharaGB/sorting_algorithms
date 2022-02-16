@@ -90,7 +90,7 @@ void merge_sort(int *array, size_t size)
 	size_t i = 0;
 	int *ptr = NULL;
 
-	if (array == NULL || size < 2)
+	if (array == NULL)
 		return;
 	ptr = malloc(sizeof(int) * size);
 	if (ptr == NULL)
