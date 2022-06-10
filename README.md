@@ -5,22 +5,22 @@
 
 <h2>Background Context</h2>
 
-<p>This project is meant to be done by groups of two students. Each group of two should <a href="/rltoken/QcXizPyNa4DTAMLNzCwdHg" title="pair program" target="_blank">pair program</a> for at least the mandatory part.</p>
+<p>This project is meant to be done by groups of two students. Each group of two should <a href="https://en.wikipedia.org/wiki/Pair_programming" title="pair program" target="_blank">pair program</a> for at least the mandatory part.</p>
 
 <h2>Resources</h2>
 
 <p><strong>Read or watch</strong>:</p>
 
 <ul>
-<li><a href="/rltoken/tmzgO7xhCpNgPUxVhLKibw" title="Sorting algorithm" target="_blank">Sorting algorithm</a> </li>
-<li><a href="/rltoken/XrLMaOhUMHfwsFEz15TVow" title="Big O notation" target="_blank">Big O notation</a> </li>
-<li><a href="/rltoken/kJ7rgWoqdLnxSnSEoAiFCQ" title="Sorting algorithms animations" target="_blank">Sorting algorithms animations</a> </li>
-<li><a href="/rltoken/RdvoGNMTJ6Hq34aJ_HmCqA" title="15 sorting algorithms in 6 minutes" target="_blank">15 sorting algorithms in 6 minutes</a> (<em><b>WARNING</b>: The following video can trigger seizure/epilepsy. It is not required for the project, as it is only a funny visualization of different sorting algorithms</em>)</li>
+<li><a href="https://en.wikipedia.org/wiki/Sorting_algorithm" title="Sorting algorithm" target="_blank">Sorting algorithm</a> </li>
+<li><a href="https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation" title="Big O notation" target="_blank">Big O notation</a> </li>
+<li><a href="https://www.toptal.com/developers/sorting-algorithms" title="Sorting algorithms animations" target="_blank">Sorting algorithms animations</a> </li>
+<li><a href="https://www.youtube.com/watch?v=kPRA0W1kECg" title="15 sorting algorithms in 6 minutes" target="_blank">15 sorting algorithms in 6 minutes</a> (<em><b>WARNING</b>: The following video can trigger seizure/epilepsy. It is not required for the project, as it is only a funny visualization of different sorting algorithms</em>)</li>
 </ul>
 
 <h2>Learning Objectives</h2>
 
-<p>At the end of this project, you are expected to be able to <a href="/rltoken/NwGzC3ck-xCcOmVIIbZn9Q" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
+<p>At the end of this project, you are expected to be able to <a href="https://fs.blog/feynman-learning-technique/" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
 
 <h3>General</h3>
 
@@ -152,6 +152,6 @@ If an answer is required within a file, all your answers files must have a newli
 
 <h3>Tests</h3>
 
-<p>Here is a quick tip to help you test your sorting algorithms with big sets of random integers: <a href="/rltoken/KkFXByKWf55lTK32JnY62w" title="Random.org" target="_blank">Random.org</a></p>
+<p>Here is a quick tip to help you test your sorting algorithms with big sets of random integers: <a href="https://www.random.org/integer-sets/" title="Random.org" target="_blank">Random.org</a></p>
 
 </div>
